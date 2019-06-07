@@ -1,0 +1,4 @@
+<div *ngFor="let comment of comments">
+  <p>{{ comment.message }}</p>
+  <p>{{ comment.timestamp | date: 'short' }}</p>
+</div>
