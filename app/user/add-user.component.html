@@ -1,0 +1,42 @@
+<form [formGroup]="userForm"  class="form-inline">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add User</h3>
+    </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label class="col-sm-3 control-label" for="UserName">User Name</label>
+        <div class="col-sm-7">
+          <input [(ngModel)]="UserName" #myInput type="text" class="form-control" placeholder="Enter User Name" formControlName="UserName">
+        </div>
+        <div class="col-sm-2">
+        <button class="btn btn-primary" (click)= "addData(myInput.value)" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+ 
+<div class="container">
+  <h2>List of User</h2>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>UserName</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr *ngFor= "let item of userArray; let i = index" [attr.data-index]="i">
+<td>{{i+1}}</td>
+<td>{{item}}</td>
+{{a}}
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+

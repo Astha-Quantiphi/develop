@@ -1,0 +1,13 @@
+<div *ngFor="let comment of comments">
+<hr style="display: block;
+height: 1px;
+border: 0;
+border-top: 2px solid #ccc;
+margin: 1em 2px;
+padding: 0;">
+<span class="section">&nbsp;</span>
+
+   <div> <b>{{ comment.selectedname }}</b>
+    <i>{{ comment.timestamp | date: 'short' }}</i></div>
+  <h4> {{ comment.message }}</h4>
+</div>

@@ -1,0 +1,20 @@
+p {
+    font-size: smaller;
+    color: grey;
+    margin: 1em 10px;
+}
+
+b {
+    color: rgb(236, 146, 27);
+    font-size: x-large;
+    margin: 1em 10px;
+}
+
+h4 {
+    margin: 1em 50px;
+}
+
+i {
+    color: grey;
+    font-size: smaller;
+}
